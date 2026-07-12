@@ -1,0 +1,211 @@
+assets:
+  AAPL:
+    enabled: true
+    name: "Apple Inc."
+    type: STOCK
+    provider: finnhub
+    api-symbol: "AAPL"
+    fractional: true
+    material: APPLE
+    custom-model-data: 0
+  MSFT:
+    enabled: true
+    name: "Microsoft Corporation"
+    type: STOCK
+    provider: finnhub
+    api-symbol: "MSFT"
+    fractional: true
+    material: LIGHT_BLUE_DYE
+    custom-model-data: 0
+  NVDA:
+    enabled: true
+    name: "NVIDIA Corporation"
+    type: STOCK
+    provider: finnhub
+    api-symbol: "NVDA"
+    fractional: true
+    material: LIME_DYE
+    custom-model-data: 0
+  TSLA:
+    enabled: true
+    name: "Tesla, Inc."
+    type: STOCK
+    provider: finnhub
+    api-symbol: "TSLA"
+    fractional: true
+    material: REDSTONE
+    custom-model-data: 0
+  AMZN:
+    enabled: true
+    name: "Amazon.com, Inc."
+    type: STOCK
+    provider: finnhub
+    api-symbol: "AMZN"
+    fractional: true
+    material: CHEST
+    custom-model-data: 0
+  GOOGL:
+    enabled: true
+    name: "Alphabet Inc."
+    type: STOCK
+    provider: finnhub
+    api-symbol: "GOOGL"
+    fractional: true
+    material: BOOK
+    custom-model-data: 0
+  META:
+    enabled: true
+    name: "Meta Platforms, Inc."
+    type: STOCK
+    provider: finnhub
+    api-symbol: "META"
+    fractional: true
+    material: ENDER_EYE
+    custom-model-data: 0
+  SPY:
+    enabled: true
+    name: "SPDR S&P 500 ETF Trust"
+    type: ETF
+    provider: finnhub
+    api-symbol: "SPY"
+    fractional: true
+    material: PAPER
+    custom-model-data: 0
+  QQQ:
+    enabled: true
+    name: "Invesco QQQ Trust"
+    type: ETF
+    provider: finnhub
+    api-symbol: "QQQ"
+    fractional: true
+    material: MAP
+    custom-model-data: 0
+  VOO:
+    enabled: true
+    name: "Vanguard S&P 500 ETF"
+    type: ETF
+    provider: finnhub
+    api-symbol: "VOO"
+    fractional: true
+    material: WRITABLE_BOOK
+    custom-model-data: 0
+  DIA:
+    enabled: true
+    name: "SPDR Dow Jones Industrial Average ETF Trust"
+    type: ETF
+    provider: finnhub
+    api-symbol: "DIA"
+    fractional: true
+    material: COMPASS
+    custom-model-data: 0
+  SPX:
+    enabled: false
+    name: "S&P 500 Index"
+    type: INDEX
+    provider: finnhub
+    api-symbol: "^GSPC"
+    fractional: false
+    material: RECOVERY_COMPASS
+    custom-model-data: 0
+  IXIC:
+    enabled: false
+    name: "NASDAQ Composite"
+    type: INDEX
+    provider: finnhub
+    api-symbol: "^IXIC"
+    fractional: false
+    material: CLOCK
+    custom-model-data: 0
+  DJI:
+    enabled: false
+    name: "Dow Jones Industrial Average"
+    type: INDEX
+    provider: finnhub
+    api-symbol: "^DJI"
+    fractional: false
+    material: BELL
+    custom-model-data: 0
+  RUT:
+    enabled: false
+    name: "Russell 2000 Index"
+    type: INDEX
+    provider: finnhub
+    api-symbol: "^RUT"
+    fractional: false
+    material: SPYGLASS
+    custom-model-data: 0
+  BTC:
+    enabled: true
+    name: "Bitcoin"
+    type: CRYPTO
+    provider: coingecko
+    api-symbol: "bitcoin"
+    fractional: true
+    material: GOLD_INGOT
+    custom-model-data: 0
+  ETH:
+    enabled: true
+    name: "Ethereum"
+    type: CRYPTO
+    provider: coingecko
+    api-symbol: "ethereum"
+    fractional: true
+    material: AMETHYST_SHARD
+    custom-model-data: 0
+  SOL:
+    enabled: true
+    name: "Solana"
+    type: CRYPTO
+    provider: coingecko
+    api-symbol: "solana"
+    fractional: true
+    material: ENDER_PEARL
+    custom-model-data: 0
+  XRP:
+    enabled: true
+    name: "XRP"
+    type: CRYPTO
+    provider: coingecko
+    api-symbol: "ripple"
+    fractional: true
+    material: PRISMARINE_CRYSTALS
+    custom-model-data: 0
+  BNB:
+    enabled: true
+    name: "BNB"
+    type: CRYPTO
+    provider: coingecko
+    api-symbol: "binancecoin"
+    fractional: true
+    material: GOLD_NUGGET
+    custom-model-data: 0
+  EURUSD:
+    enabled: false
+    name: "Euro / US Dollar"
+    type: FOREX
+    provider: fictional
+    api-symbol: "EURUSD"
+    fractional: true
+    initial-price: 1.08
+    material: EMERALD
+    custom-model-data: 0
+  GOLD:
+    enabled: false
+    name: "Gold Spot"
+    type: COMMODITY
+    provider: fictional
+    api-symbol: "GOLD"
+    fractional: true
+    initial-price: 2400.00
+    material: GOLD_BLOCK
+    custom-model-data: 0
+  WILD:
+    enabled: true
+    name: "WildMare Composite"
+    type: FICTIONAL
+    provider: fictional
+    api-symbol: "WILD"
+    fractional: true
+    initial-price: 100.00
+    material: PURPLE_DYE
+    custom-model-data: 0

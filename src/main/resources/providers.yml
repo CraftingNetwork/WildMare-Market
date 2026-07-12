@@ -1,0 +1,29 @@
+# API keys remain server-side and are never sent to players.
+defaults:
+  stocks: "finnhub"
+  etfs: "finnhub"
+  indexes: "finnhub"
+  commodities: "finnhub"
+  forex: "finnhub"
+  crypto: "coingecko"
+  fictional: "fictional"
+fallback-provider: ""
+http:
+  timeout-seconds: 10
+  retries: 2
+  retry-delay-milliseconds: 750
+  max-concurrent-requests: 4
+  user-agent: "WildMareMarket/1.0"
+providers:
+  finnhub:
+    enabled: false
+    base-url: "https://finnhub.io/api/v1"
+    api-key: "PUT_YOUR_FINNHUB_KEY_HERE"
+  coingecko:
+    enabled: true
+    base-url: "https://api.coingecko.com/api/v3"
+    api-key: ""
+    api-key-header: "x-cg-demo-api-key"
+  fictional:
+    enabled: true
+    volatility-percent: 2.5

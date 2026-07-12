@@ -1,0 +1,52 @@
+# WildMare Market main configuration.
+prefix: "<gradient:#7E22CE:#D8B4FE><bold>ᴡɪʟᴅᴍᴀʀᴇ</bold></gradient> <dark_gray>»</dark_gray>"
+locale: "en-US"
+currency-symbol: "$"
+currency-decimals: 2
+quantity-decimals: 8
+
+trading:
+  enabled: true
+  fractional-enabled: true
+  fee-percent: 0.50
+  minimum-fee: 0.01
+  minimum-transaction-value: 1.00
+  maximum-transaction-value: 1000000.00
+  cooldown-milliseconds: 1000
+  max-price-age-seconds: 120
+  allow-trading-with-stale-price: false
+  confirmation-timeout-seconds: 30
+
+cache:
+  quote-ttl-seconds: 30
+  history-ttl-seconds: 300
+  persist-market-cache: true
+  maximum-history-points: 500
+
+refresh:
+  enabled: true
+  interval-seconds: 30
+  assets-per-cycle: 25
+  movement-notification-percent: 8.0
+
+watchlist:
+  default-limit: 20
+  maximum-limit: 100
+
+alerts:
+  default-limit: 10
+  maximum-limit: 100
+  evaluation-interval-seconds: 30
+  repeat-triggered-alerts: false
+
+leaderboards:
+  refresh-interval-seconds: 300
+  maximum-entries: 100
+  excluded-uuids: []
+
+gui:
+  sequential-loading: true
+  animation-delay-ticks: 1
+  fill-empty-slots: true
+
+debug: false

@@ -1,0 +1,17 @@
+# Storage types: SQLITE, MYSQL, MARIADB
+type: SQLITE
+sqlite:
+  file: "wildmare-market.db"
+remote:
+  host: "127.0.0.1"
+  port: 3306
+  database: "wildmare_market"
+  username: "root"
+  password: "change-me"
+  use-ssl: false
+pool:
+  maximum-pool-size: 10
+  minimum-idle: 2
+  connection-timeout-milliseconds: 10000
+  idle-timeout-milliseconds: 600000
+  max-lifetime-milliseconds: 1800000

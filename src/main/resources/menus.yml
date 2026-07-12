@@ -1,0 +1,255 @@
+theme:
+  filler: {material: PURPLE_STAINED_GLASS_PANE, name: " "}
+  back:
+    material: ARROW
+    name: "<gray>← ʙᴀᴄᴋ</gray>"
+    lore: ["<dark_gray>Return to the previous menu.</dark_gray>"]
+  previous: {material: SPECTRAL_ARROW, name: "<light_purple>← ᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ</light_purple>"}
+  next: {material: SPECTRAL_ARROW, name: "<light_purple>ɴᴇxᴛ ᴘᴀɢᴇ →</light_purple>"}
+
+main:
+  title: "<gradient:#7E22CE:#D8B4FE><bold>ᴡɪʟᴅᴍᴀʀᴇ ᴍᴀʀᴋᴇᴛ</bold></gradient>"
+  size: 54
+  items:
+    overview:
+      slot: 4
+      material: NETHER_STAR
+      name: "<gradient:#A855F7:#D8B4FE><bold>ᴍᴀʀᴋᴇᴛ ᴏᴠᴇʀᴠɪᴇᴡ</bold></gradient>"
+      lore:
+        - "<gray>Status:</gray> {market_status}"
+        - "<gray>Enabled Assets:</gray> <white>{asset_count}</white>"
+        - "<gray>Cached Quotes:</gray> <white>{cache_count}</white>"
+    stocks: {slot: 20, material: EMERALD, name: "<light_purple><bold>sᴛᴏᴄᴋs</bold></light_purple>", lore: ["<gray>Browse listed company shares.</gray>"]}
+    etfs: {slot: 21, material: PAPER, name: "<light_purple><bold>ᴇᴛғs</bold></light_purple>", lore: ["<gray>Browse exchange-traded funds.</gray>"]}
+    indexes: {slot: 22, material: COMPASS, name: "<light_purple><bold>ɪɴᴅᴇxᴇs</bold></light_purple>", lore: ["<gray>Browse market indexes.</gray>"]}
+    crypto: {slot: 23, material: AMETHYST_SHARD, name: "<light_purple><bold>ᴄʀʏᴘᴛᴏᴄᴜʀʀᴇɴᴄʏ</bold></light_purple>", lore: ["<gray>Browse virtual cryptocurrency assets.</gray>"]}
+    search: {slot: 24, material: SPYGLASS, name: "<light_purple><bold>sᴇᴀʀᴄʜ ᴀssᴇᴛ</bold></light_purple>", lore: ["<gray>Use:</gray> <white>/market search &lt;symbol&gt;</white>"]}
+    trending: {slot: 10, material: FIREWORK_STAR, name: "<light_purple><bold>ᴛʀᴇɴᴅɪɴɢ ᴀssᴇᴛs</bold></light_purple>", lore: ["<gray>View assets with notable movement.</gray>"]}
+    recent: {slot: 16, material: CLOCK, name: "<light_purple><bold>ʀᴇᴄᴇɴᴛʟʏ ᴛʀᴀᴅᴇᴅ</bold></light_purple>", lore: ["<gray>View the latest globally traded assets.</gray>"]}
+    gainers: {slot: 12, material: LIME_DYE, name: "<green><bold>ᴛᴏᴘ ɢᴀɪɴᴇʀs</bold></green>", lore: ["<gray>View the strongest positive changes.</gray>"]}
+    losers: {slot: 14, material: RED_DYE, name: "<red><bold>ᴛᴏᴘ ʟᴏsᴇʀs</bold></red>", lore: ["<gray>View the strongest negative changes.</gray>"]}
+    portfolio:
+      slot: 29
+      material: ENDER_CHEST
+      name: "<gradient:#A855F7:#D8B4FE><bold>ᴍʏ ᴘᴏʀᴛғᴏʟɪᴏ</bold></gradient>"
+      lore: ["<gray>Value:</gray> <white>{portfolio_value}</white>", "<gray>Profit/Loss:</gray> {profit_color}{profit}</{profit_color}>"]
+    watchlist: {slot: 30, material: BOOK, name: "<light_purple><bold>ᴍʏ ᴡᴀᴛᴄʜʟɪsᴛ</bold></light_purple>", lore: ["<gray>Track favorite assets.</gray>"]}
+    alerts: {slot: 31, material: BELL, name: "<light_purple><bold>ᴘʀɪᴄᴇ ᴀʟᴇʀᴛs</bold></light_purple>", lore: ["<gray>Manage your market alerts.</gray>"]}
+    history: {slot: 32, material: WRITABLE_BOOK, name: "<light_purple><bold>ᴛʀᴀɴsᴀᴄᴛɪᴏɴ ʜɪsᴛᴏʀʏ</bold></light_purple>", lore: ["<gray>Review completed trades.</gray>"]}
+    leaderboard: {slot: 33, material: GOLDEN_HELMET, name: "<light_purple><bold>ᴘᴏʀᴛғᴏʟɪᴏ ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ</bold></light_purple>", lore: ["<gray>Compare virtual portfolio values.</gray>"]}
+    status: {slot: 40, material: CLOCK, name: "<light_purple><bold>ᴍᴀʀᴋᴇᴛ sᴛᴀᴛᴜs</bold></light_purple>", lore: ["<gray>Traditional market:</gray> {market_status}", "<gray>Provider cache:</gray> <white>{cache_count}</white>"]}
+    settings: {slot: 42, material: COMPARATOR, name: "<light_purple><bold>sᴇᴛᴛɪɴɢs</bold></light_purple>", lore: ["<gray>Configure market notifications.</gray>"]}
+    help: {slot: 49, material: KNOWLEDGE_BOOK, name: "<white><bold>ʜᴇʟᴘ</bold></white>", lore: ["<gray>View commands and trading guidance.</gray>"]}
+
+browser:
+  title: "<gradient:#7E22CE:#D8B4FE><bold>{category}</bold></gradient> <dark_gray>• {page}/{pages}</dark_gray>"
+  size: 54
+  search-label: "sᴇᴀʀᴄʜ"
+  categories:
+    all: "ᴀʟʟ ᴍᴀʀᴋᴇᴛs"
+    stocks: "sᴛᴏᴄᴋs"
+    etfs: "ᴇᴛғs"
+    indexes: "ɪɴᴅᴇxᴇs"
+    crypto: "ᴄʀʏᴘᴛᴏᴄᴜʀʀᴇɴᴄʏ"
+    trending: "ᴛʀᴇɴᴅɪɴɢ ᴀssᴇᴛs"
+    recent: "ʀᴇᴄᴇɴᴛʟʏ ᴛʀᴀᴅᴇᴅ"
+    gainers: "ᴛᴏᴘ ɢᴀɪɴᴇʀs"
+    losers: "ᴛᴏᴘ ʟᴏsᴇʀs"
+
+detail:
+  title: "<gradient:#7E22CE:#D8B4FE><bold>{symbol}</bold></gradient> <dark_gray>• ᴀssᴇᴛ ᴅᴇᴛᴀɪʟs</dark_gray>"
+  size: 54
+  info-slot: 13
+  buy-slot: 29
+  sell-slot: 33
+  watchlist-slot: 31
+  chart-slot: 40
+  alert-slot: 41
+  refresh-slot: 22
+  back-slot: 49
+  buy: {material: LIME_CONCRETE, name: "<green><bold>ʙᴜʏ ᴀssᴇᴛ</bold></green>", lore: ["<gray>Choose a quantity to purchase.</gray>"]}
+  sell: {material: RED_CONCRETE, name: "<red><bold>sᴇʟʟ ᴀssᴇᴛ</bold></red>", lore: ["<gray>Choose a quantity to sell.</gray>"]}
+  watchlist-add: {material: BOOK, name: "<light_purple><bold>ᴀᴅᴅ ᴛᴏ ᴡᴀᴛᴄʜʟɪsᴛ</bold></light_purple>"}
+  watchlist-remove: {material: WRITABLE_BOOK, name: "<gray><bold>ʀᴇᴍᴏᴠᴇ ғʀᴏᴍ ᴡᴀᴛᴄʜʟɪsᴛ</bold></gray>"}
+  chart: {material: FILLED_MAP, name: "<light_purple><bold>ᴘʀɪᴄᴇ ʜɪsᴛᴏʀʏ</bold></light_purple>", lore: ["<gray>View a simplified 7-day chart.</gray>"]}
+  alert: {material: TRIPWIRE_HOOK, name: "<light_purple><bold>ᴄʀᴇᴀᴛᴇ ᴘʀɪᴄᴇ ᴀʟᴇʀᴛ</bold></light_purple>", lore: ["<gray>Create a target-price or percentage alert.</gray>"]}
+  refresh: {material: CLOCK, name: "<light_purple><bold>ʀᴇғʀᴇsʜ</bold></light_purple>", lore: ["<gray>Request the latest available quote.</gray>"]}
+
+quantity:
+  title-buy: "<gradient:#7E22CE:#D8B4FE><bold>ʙᴜʏ {symbol}</bold></gradient>"
+  title-sell: "<gradient:#7E22CE:#D8B4FE><bold>sᴇʟʟ {symbol}</bold></gradient>"
+  size: 36
+  choices:
+    - {slot: 10, quantity: 1, material: IRON_NUGGET}
+    - {slot: 11, quantity: 5, material: IRON_INGOT}
+    - {slot: 12, quantity: 10, material: GOLD_INGOT}
+    - {slot: 13, quantity: 25, material: DIAMOND}
+  sell-percentages:
+    - {slot: 19, percent: 25, material: COPPER_INGOT}
+    - {slot: 20, percent: 50, material: IRON_INGOT}
+    - {slot: 21, percent: 75, material: GOLD_INGOT}
+  maximum:
+    slot: 24
+    material: NETHER_STAR
+    name-buy: "<light_purple><bold>ᴍᴀxɪᴍᴜᴍ ᴀғғᴏʀᴅᴀʙʟᴇ</bold></light_purple>"
+    name-sell: "<light_purple><bold>sᴇʟʟ ᴀʟʟ</bold></light_purple>"
+    lore: ["<gray>{quantity} {symbol}</gray>"]
+  custom:
+    slot: 25
+    material: NAME_TAG
+    name: "<white><bold>ᴄᴜsᴛᴏᴍ ᴀᴍᴏᴜɴᴛ</bold></white>"
+    lore: ["<gray>Use the command:</gray>", "<white>/market {side} {symbol} &lt;amount&gt;</white>"]
+  back-slot: 31
+
+confirmation:
+  title-buy: "<gradient:#7E22CE:#D8B4FE><bold>ᴄᴏɴғɪʀᴍ ᴘᴜʀᴄʜᴀsᴇ</bold></gradient>"
+  title-sell: "<gradient:#7E22CE:#D8B4FE><bold>ᴄᴏɴғɪʀᴍ sᴀʟᴇ</bold></gradient>"
+  size: 27
+  summary-slot: 13
+  confirm-slot: 11
+  cancel-slot: 15
+  confirm: {material: LIME_CONCRETE, name: "<green><bold>ᴄᴏɴғɪʀᴍ ᴛʀᴀᴅᴇ</bold></green>"}
+  cancel: {material: RED_CONCRETE, name: "<red><bold>ᴄᴀɴᴄᴇʟ ᴛʀᴀᴅᴇ</bold></red>"}
+
+portfolio:
+  title: "<gradient:#7E22CE:#D8B4FE><bold>ᴍʏ ᴘᴏʀᴛғᴏʟɪᴏ</bold></gradient>"
+  size: 54
+  summary-name: "ᴘᴏʀᴛғᴏʟɪᴏ sᴜᴍᴍᴀʀʏ"
+  summary-symbol: "TOTAL"
+  summary-type: "PORTFOLIO"
+  latest-label: "latest available"
+watchlist:
+  title: "<gradient:#7E22CE:#D8B4FE><bold>ᴍʏ ᴡᴀᴛᴄʜʟɪsᴛ</bold></gradient>"
+  size: 54
+  items:
+    sort-name: {slot: 47, material: NAME_TAG, name: "<light_purple><bold>sᴏʀᴛ ʙʏ ɴᴀᴍᴇ</bold></light_purple>"}
+    sort-price: {slot: 48, material: GOLD_INGOT, name: "<light_purple><bold>sᴏʀᴛ ʙʏ ᴘʀɪᴄᴇ</bold></light_purple>"}
+    sort-change: {slot: 50, material: FIREWORK_STAR, name: "<light_purple><bold>sᴏʀᴛ ʙʏ ᴄʜᴀɴɢᴇ</bold></light_purple>"}
+alerts:
+  title: "<gradient:#7E22CE:#D8B4FE><bold>ᴘʀɪᴄᴇ ᴀʟᴇʀᴛs</bold></gradient>"
+  size: 54
+  status-active: "ACTIVE"
+  status-paused: "PAUSED"
+  yes: "YES"
+  no: "NO"
+history: {title: "<gradient:#7E22CE:#D8B4FE><bold>ᴛʀᴀɴsᴀᴄᴛɪᴏɴ ʜɪsᴛᴏʀʏ</bold></gradient>", size: 54}
+leaderboard:
+  title: "<gradient:#7E22CE:#D8B4FE><bold>ᴘᴏʀᴛғᴏʟɪᴏ ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ</bold></gradient>"
+  size: 54
+  metrics:
+    - {slot: 45, value: PORTFOLIO_VALUE, material: PURPLE_DYE, name: "ᴘᴏʀᴛғᴏʟɪᴏ ᴠᴀʟᴜᴇ"}
+    - {slot: 46, value: REALIZED_PROFIT, material: PURPLE_DYE, name: "ʀᴇᴀʟɪᴢᴇᴅ ᴘʀᴏғɪᴛ"}
+    - {slot: 47, value: PERCENT_RETURN, material: PURPLE_DYE, name: "ᴘᴇʀᴄᴇɴᴛ ʀᴇᴛᴜʀɴ"}
+    - {slot: 48, value: MOST_ACTIVE, material: PURPLE_DYE, name: "ᴍᴏsᴛ ᴀᴄᴛɪᴠᴇ"}
+    - {slot: 49, value: DAILY_PERFORMANCE, material: PURPLE_DYE, name: "ᴅᴀɪʟʏ ᴘᴇʀғᴏʀᴍᴀɴᴄᴇ"}
+    - {slot: 50, value: WEEKLY_PERFORMANCE, material: PURPLE_DYE, name: "ᴡᴇᴇᴋʟʏ ᴘᴇʀғᴏʀᴍᴀɴᴄᴇ"}
+    - {slot: 51, value: MONTHLY_PERFORMANCE, material: PURPLE_DYE, name: "ᴍᴏɴᴛʜʟʏ ᴘᴇʀғᴏʀᴍᴀɴᴄᴇ"}
+settings:
+  title: "<gradient:#7E22CE:#D8B4FE><bold>ᴍᴀʀᴋᴇᴛ sᴇᴛᴛɪɴɢs</bold></gradient>"
+  size: 27
+  items:
+    alert_chat: {slot: 10, material: WRITABLE_BOOK, name: "ᴀʟᴇʀᴛ ᴄʜᴀᴛ"}
+    alert_actionbar: {slot: 11, material: OAK_SIGN, name: "ᴀʟᴇʀᴛ ᴀᴄᴛɪᴏɴ ʙᴀʀ"}
+    alert_sound: {slot: 12, material: NOTE_BLOCK, name: "ᴀʟᴇʀᴛ sᴏᴜɴᴅ"}
+    alert_title: {slot: 13, material: NAME_TAG, name: "ᴀʟᴇʀᴛ ᴛɪᴛʟᴇ"}
+    movement_notifications: {slot: 14, material: FIREWORK_STAR, name: "ᴍᴀʀᴋᴇᴛ ᴍᴏᴠᴇᴍᴇɴᴛs"}
+  status-enabled: "<green>ENABLED</green>"
+  status-disabled: "<red>DISABLED</red>"
+  back-slot: 22
+
+templates:
+  asset:
+    name: "<gradient:#A855F7:#D8B4FE><bold>{name}</bold></gradient>"
+    lore:
+      - "<gray>Symbol:</gray> <white>{symbol}</white>"
+      - "<gray>Price:</gray> <white>{price}</white>"
+      - "<gray>Change:</gray> {change_color}{change_percent}%</{change_color}>"
+      - "<gray>Market:</gray> {market_status}"
+      - "<gray>Last Update:</gray> <white>{age}</white>"
+      - " "
+      - "<light_purple>Left-click to view details.</light_purple>"
+      - "<light_purple>Shift-click to toggle watchlist.</light_purple>"
+  asset-loading: {name: "<gray>{name}</gray>", lore: ["<dark_gray>Market data is loading...</dark_gray>"]}
+  detail:
+    name: "<gradient:#A855F7:#D8B4FE><bold>{name}</bold></gradient>"
+    lore:
+      - "<gray>Symbol:</gray> <white>{symbol}</white>"
+      - "<gray>Type:</gray> <white>{type}</white>"
+      - "<gray>Price:</gray> <white>{price}</white>"
+      - "<gray>Previous Close:</gray> <white>{previous_close}</white>"
+      - "<gray>Change:</gray> {change_color}{change} ({change_percent}%)</{change_color}>"
+      - "<gray>Open:</gray> <white>{open}</white>"
+      - "<gray>High:</gray> <white>{high}</white>"
+      - "<gray>Low:</gray> <white>{low}</white>"
+      - "<gray>Volume:</gray> <white>{volume}</white>"
+      - "<gray>Status:</gray> {market_status}"
+      - "<gray>Updated:</gray> <white>{age}</white>"
+      - " "
+      - "<gray>Owned:</gray> <white>{owned}</white>"
+      - "<gray>Average Cost:</gray> <white>{average_cost}</white>"
+      - "<gray>Position Value:</gray> <white>{position_value}</white>"
+      - "<gray>Unrealized P/L:</gray> {profit_color}{unrealized}</{profit_color}>"
+  quantity:
+    name: "<light_purple><bold>{quantity} {symbol}</bold></light_purple>"
+    lore: ["<gray>Estimated Total:</gray> <white>{total}</white>", "<gray>Includes estimated fee.</gray>"]
+  confirmation:
+    name: "<gradient:#A855F7:#D8B4FE><bold>{side} {symbol}</bold></gradient>"
+    lore:
+      - "<gray>Quantity:</gray> <white>{quantity}</white>"
+      - "<gray>Unit Price:</gray> <white>{price}</white>"
+      - "<gray>Subtotal:</gray> <white>{subtotal}</white>"
+      - "<gray>Trading Fee:</gray> <white>{fee}</white>"
+      - "<gray>Final Total:</gray> <white>{total}</white>"
+      - "<gray>Remaining Balance:</gray> <white>{remaining_balance}</white>"
+      - "<gray>Price Timestamp:</gray> <white>{timestamp}</white>"
+  portfolio-summary:
+    name: "<gradient:#A855F7:#D8B4FE><bold>ᴘᴏʀᴛғᴏʟɪᴏ sᴜᴍᴍᴀʀʏ</bold></gradient>"
+    lore:
+      - "<gray>Total Portfolio Value:</gray> <white>{portfolio_value}</white>"
+      - "<gray>Total Invested:</gray> <white>{total_invested}</white>"
+      - "<gray>Available Balance:</gray> <white>{available_balance}</white>"
+      - " "
+      - "<gray>Unrealized P/L:</gray> {unrealized_color}{unrealized}</{unrealized_color}>"
+      - "<gray>Realized P/L:</gray> {realized_color}{realized}</{realized_color}>"
+      - "<gray>Daily Change:</gray> {daily_color}{daily_change}</{daily_color}>"
+      - " "
+      - "<gray>Best Asset:</gray> <white>{best_asset}</white>"
+      - "<gray>Worst Asset:</gray> <white>{worst_asset}</white>"
+      - "<gray>Owned Assets:</gray> <white>{owned_assets}</white>"
+  holding:
+    name: "<gradient:#A855F7:#D8B4FE><bold>{symbol}</bold></gradient>"
+    lore:
+      - "<gray>Quantity:</gray> <white>{quantity}</white>"
+      - "<gray>Average Price:</gray> <white>{average_price}</white>"
+      - "<gray>Latest Price:</gray> <white>{latest_price}</white>"
+      - "<gray>Position Value:</gray> <white>{position_value}</white>"
+      - "<gray>Portfolio Allocation:</gray> <white>{allocation_percent}%</white>"
+      - "<gray>Profit/Loss:</gray> {profit_color}{profit} ({profit_percent}%)</{profit_color}>"
+  transaction:
+    name: "<light_purple><bold>{type} {symbol}</bold></light_purple>"
+    lore:
+      - "<gray>Quantity:</gray> <white>{quantity}</white>"
+      - "<gray>Unit Price:</gray> <white>{price}</white>"
+      - "<gray>Fee:</gray> <white>{fee}</white>"
+      - "<gray>Total:</gray> <white>{total}</white>"
+      - "<gray>Status:</gray> <white>{status}</white>"
+      - "<gray>Date:</gray> <white>{date}</white>"
+  alert:
+    name: "<light_purple><bold>{symbol} ᴀʟᴇʀᴛ</bold></light_purple>"
+    lore:
+      - "<gray>Condition:</gray> <white>{condition}</white>"
+      - "<gray>Target:</gray> <white>{target}</white>"
+      - "<gray>Status:</gray> <white>{status}</white>"
+      - "<gray>Triggered:</gray> <white>{triggered}</white>"
+      - " "
+      - "<light_purple>Left-click to pause/resume.</light_purple>"
+      - "<red>Shift-right-click to delete.</red>"
+  leaderboard:
+    name: "<gradient:#A855F7:#D8B4FE><bold>#{rank} {player}</bold></gradient>"
+    lore: ["<gray>{metric}:</gray> <white>{value}</white>"]
+  setting:
+    name: "<light_purple><bold>{name}</bold></light_purple>"
+    lore: ["<gray>Status:</gray> {status}", "<gray>Click to toggle.</gray>"]
+  leaderboard-metric:
+    name: "<light_purple><bold>{name}</bold></light_purple>"
+    lore: ["<gray>View this ranking category.</gray>"]

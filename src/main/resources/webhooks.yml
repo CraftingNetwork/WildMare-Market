@@ -1,0 +1,6 @@
+discord:
+  enabled: false
+  url: ""
+  username: "WildMare Market"
+  avatar-url: ""
+  alert-message: "**{player}**: {symbol} reached {price} ({condition} {target})."

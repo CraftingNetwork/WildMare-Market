@@ -1,0 +1,115 @@
+prefix: "<gradient:#7E22CE:#D8B4FE><bold>ᴡɪʟᴅᴍᴀʀᴇ</bold></gradient> <dark_gray>»</dark_gray>"
+
+general:
+  no-permission: "<red>You do not have permission to do that.</red>"
+  player-only: "<red>This command can only be used by a player.</red>"
+  invalid-number: "<red>Please enter a valid positive number.</red>"
+  unknown-command: "<red>Unknown subcommand. Use <white>/market help</white>.</red>"
+  reloaded: "<green>Configuration files were reloaded.</green>"
+  feature-disabled: "<red>This feature is currently disabled.</red>"
+  internal-error: "<red>An unexpected error occurred. Please contact a server administrator.</red>"
+  loading: "<gray>Loading market data...</gray>"
+  cancelled: "<gray>The action was cancelled.</gray>"
+  usage: "<gray>Usage:</gray> <white>{usage}</white>"
+  invalid-alert-id: "<red>The alert ID is invalid. Use the alerts menu.</red>"
+
+market:
+  unavailable: "<red>Market data is temporarily unavailable. Please try again later.</red>"
+  unknown-asset: "<red>No enabled asset was found for <white>{symbol}</white>.</red>"
+  stale-price: "<red>The latest price for <white>{symbol}</white> is too old to trade safely.</red>"
+  refreshing: "<gray>Refreshing market data...</gray>"
+  refreshed: "<green>Market data refresh completed.</green>"
+  refresh-failed: "<red>Market data refresh failed for one or more assets.</red>"
+  quote: "<light_purple>{name}</light_purple> <gray>(</gray><white>{symbol}</white><gray>)</gray> <dark_gray>•</dark_gray> <white>{price}</white> <dark_gray>•</dark_gray> {change_color}{change_percent}%</{change_color}> <dark_gray>•</dark_gray> <gray>{age}</gray>"
+  open: "<green>Market Open</green>"
+  closed: "<red>Market Closed</red>"
+  search-instruction: "<gray>Search with</gray> <white>/market search &lt;symbol or name&gt;</white><gray>.</gray>"
+  custom-amount-instruction: "<gray>Enter a custom amount with</gray> <white>/market {side} {symbol} &lt;amount&gt;</white><gray>.</gray>"
+  cache-status: "<gray>Cached Quotes:</gray> <white>{quotes}</white> <dark_gray>•</dark_gray> <gray>Cached History:</gray> <white>{history}</white>"
+
+trade:
+  success: "<green>Your trade was completed successfully.</green>"
+  purchase: "<gray>You purchased</gray> <light_purple>{quantity} {symbol}</light_purple> <gray>for</gray> <white>{total}</white><gray>.</gray>"
+  sale: "<gray>You sold</gray> <light_purple>{quantity} {symbol}</light_purple> <gray>for</gray> <white>{total}</white><gray>.</gray>"
+  failed: "<red>Unable to complete this transaction.</red>"
+  insufficient-balance: "<red>You do not have enough funds to complete this purchase.</red>"
+  insufficient-holdings: "<red>You do not own enough of this asset.</red>"
+  invalid-quantity: "<red>The quantity must be greater than zero.</red>"
+  fractional-denied: "<red>You are not allowed to trade fractional quantities.</red>"
+  below-minimum: "<red>The transaction value must be at least <white>{minimum}</white>.</red>"
+  above-maximum: "<red>The transaction value cannot exceed <white>{maximum}</white>.</red>"
+  cooldown: "<red>Please wait before submitting another trade.</red>"
+  market-closed: "<red>This market is currently closed for trading.</red>"
+  duplicate: "<red>This trade has already been processed.</red>"
+  economy-failure: "<red>The economy provider rejected the transaction.</red>"
+  confirmation-expired: "<red>This trade confirmation expired because its price is no longer valid.</red>"
+
+watchlist:
+  added: "<green><white>{symbol}</white> was added to your watchlist.</green>"
+  removed: "<gray><white>{symbol}</white> was removed from your watchlist.</gray>"
+  full: "<red>Your watchlist is full. Your current limit is <white>{limit}</white>.</red>"
+  already-added: "<red>This asset is already on your watchlist.</red>"
+  not-found: "<red>This asset is not on your watchlist.</red>"
+
+alerts:
+  created: "<green>Price alert created for <white>{symbol}</white>.</green>"
+  deleted: "<gray>Price alert deleted.</gray>"
+  paused: "<gray>Price alert status updated.</gray>"
+  full: "<red>You reached your alert limit of <white>{limit}</white>.</red>"
+  triggered: "<light_purple>Price Alert</light_purple> <dark_gray>•</dark_gray> <white>{symbol}</white> is now <white>{price}</white> <gray>({condition} {target})</gray>."
+  title: "<gradient:#7E22CE:#D8B4FE><bold>ᴘʀɪᴄᴇ ᴀʟᴇʀᴛ</bold></gradient>"
+  subtitle: "<white>{symbol} • {price}</white>"
+  create-instruction: "<gray>Create an alert with</gray> <white>/market alerts add {symbol} &lt;above|below|percent_up|percent_down|daily_gain|daily_loss&gt; &lt;target&gt;</white><gray>.</gray>"
+
+chart:
+  header: "<gradient:#7E22CE:#D8B4FE><bold>ᴘʀɪᴄᴇ ʜɪsᴛᴏʀʏ — {symbol}</bold></gradient> <gray>({period})</gray>"
+  graph: "{color}{chart}</{color}>"
+  range: "<gray>Low:</gray> <white>{low}</white> <dark_gray>•</dark_gray> <gray>High:</gray> <white>{high}</white>"
+  unavailable: "<red>Historical price data is unavailable.</red>"
+
+settings:
+  updated: "<green>Notification setting updated.</green>"
+
+movement:
+  notification: "<light_purple>Market Movement</light_purple> <dark_gray>•</dark_gray> <white>{symbol}</white> moved {change_color}{change_percent}%</{change_color}> to <white>{price}</white>."
+
+admin:
+  status-header: "<gradient:#7E22CE:#D8B4FE><bold>WildMare Market Status</bold></gradient>"
+  status-line: "<gray>{key}:</gray> <white>{value}</white>"
+  cache-cleared: "<green>Market cache cleared.</green>"
+  asset-enabled: "<green><white>{symbol}</white> was enabled.</green>"
+  asset-disabled: "<gray><white>{symbol}</white> was disabled.</gray>"
+  player-updated: "<green>Player market data was updated.</green>"
+  provider-unavailable: "<red>The requested provider is not configured.</red>"
+  debug-updated: "<green>Debug mode is now <white>{value}</white>.</green>"
+  asset-add-failed: "<red>The asset could not be added or already exists.</red>"
+  unknown-player: "<red>No cached player or matching UUID was found.</red>"
+  player-required: "<red>A cached player name or UUID is required.</red>"
+  recent-transactions-header: "<gradient:#7E22CE:#D8B4FE><bold>Recent Transactions — {player}</bold></gradient>"
+  no-transactions: "<gray>No transactions were found.</gray>"
+  transaction-line: "<gray>{date}</gray> <dark_gray>•</dark_gray> <white>{type} {quantity} {symbol}</white> <dark_gray>•</dark_gray> <white>{total}</white> <dark_gray>•</dark_gray> <gray>{status}</gray>"
+
+help:
+  player:
+    - "<gradient:#7E22CE:#D8B4FE><bold>ᴡɪʟᴅᴍᴀʀᴇ ᴍᴀʀᴋᴇᴛ</bold></gradient>"
+    - "<gray>/market</gray> <white>Open the market menu.</white>"
+    - "<gray>/market quote &lt;symbol&gt;</gray> <white>View the latest quote.</white>"
+    - "<gray>/market buy &lt;symbol&gt; &lt;amount&gt;</gray> <white>Buy a virtual asset.</white>"
+    - "<gray>/market sell &lt;symbol&gt; &lt;amount&gt;</gray> <white>Sell a virtual asset.</white>"
+    - "<gray>/market portfolio</gray> <white>Open your portfolio.</white>"
+    - "<gray>/market watchlist [add|remove] &lt;symbol&gt;</gray> <white>Manage your watchlist.</white>"
+    - "<gray>/market alerts add &lt;symbol&gt; &lt;above|below|percent_up|percent_down&gt; &lt;target&gt;</gray>"
+    - "<gray>/market history &lt;symbol&gt; [1d|7d|30d|90d|1y]</gray>"
+  admin:
+    - "<gradient:#7E22CE:#D8B4FE><bold>WildMare Market Admin</bold></gradient>"
+    - "<gray>/marketadmin reload</gray>"
+    - "<gray>/marketadmin refresh [symbol]</gray>"
+    - "<gray>/marketadmin status</gray>"
+    - "<gray>/marketadmin cache|clearcache</gray>"
+    - "<gray>/marketadmin provider [name]</gray>"
+    - "<gray>/marketadmin enable|disable &lt;symbol&gt;</gray>"
+    - "<gray>/marketadmin addasset|removeasset &lt;symbol&gt;</gray>"
+    - "<gray>/marketadmin resetportfolio &lt;player&gt;</gray>"
+    - "<gray>/marketadmin setholding|giveasset|takeasset &lt;player&gt; &lt;symbol&gt; &lt;amount&gt;</gray>"
+    - "<gray>/marketadmin transaction &lt;player&gt;</gray>"
+    - "<gray>/marketadmin debug [on|off]</gray>"

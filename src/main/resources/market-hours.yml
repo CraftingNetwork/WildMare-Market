@@ -1,0 +1,12 @@
+enabled: true
+timezone: "America/New_York"
+opening-time: "09:30"
+closing-time: "16:00"
+trading-days: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY]
+weekend-trading: false
+holiday-closures: ["2026-01-01", "2026-12-25"]
+allow-trades-while-closed: false
+always-open-types: [CRYPTO, FICTIONAL]
+
+status-open: "Market Open"
+status-closed: "Market Closed"

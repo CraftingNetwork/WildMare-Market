@@ -1,0 +1,51 @@
+name: WildMareMarket
+version: '${project.version}'
+main: com.wildmare.market.WildMareMarketPlugin
+api-version: '1.20'
+authors: [WildMare]
+description: A professional virtual stock market and investment system for Minecraft servers.
+depend: [Vault]
+softdepend: [PlaceholderAPI, ProtocolLib]
+load: POSTWORLD
+
+commands:
+  market:
+    description: Open and use WildMare Market.
+    usage: /market [help|browse|stocks|crypto|portfolio|watchlist|alerts|history|leaderboard|search|quote|buy|sell]
+    aliases: [stocks, stock, wmmarket, trade]
+    permission: wildmaremarket.use
+  marketadmin:
+    description: Administrative controls for WildMare Market.
+    usage: /marketadmin [help|reload|refresh|status|cache|clearcache|provider|enable|disable|addasset|removeasset|resetportfolio|setholding|giveasset|takeasset|transaction|debug]
+    aliases: [wmadmin]
+    permission: wildmaremarket.admin
+
+permissions:
+  wildmaremarket.use: {default: true}
+  wildmaremarket.menu: {default: true}
+  wildmaremarket.trade:
+    default: true
+    children:
+      wildmaremarket.buy: true
+      wildmaremarket.sell: true
+  wildmaremarket.buy: {default: true}
+  wildmaremarket.sell: {default: true}
+  wildmaremarket.portfolio: {default: true}
+  wildmaremarket.watchlist: {default: true}
+  wildmaremarket.alerts: {default: true}
+  wildmaremarket.history: {default: true}
+  wildmaremarket.leaderboard: {default: true}
+  wildmaremarket.trade.fractional: {default: op}
+  wildmaremarket.admin:
+    default: op
+    children:
+      wildmaremarket.admin.reload: true
+      wildmaremarket.admin.refresh: true
+      wildmaremarket.admin.manageassets: true
+      wildmaremarket.admin.manageplayers: true
+      wildmaremarket.admin.debug: true
+  wildmaremarket.admin.reload: {default: op}
+  wildmaremarket.admin.refresh: {default: op}
+  wildmaremarket.admin.manageassets: {default: op}
+  wildmaremarket.admin.manageplayers: {default: op}
+  wildmaremarket.admin.debug: {default: op}

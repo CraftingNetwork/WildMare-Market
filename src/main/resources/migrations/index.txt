@@ -1,0 +1,6 @@
+V1__initial.sql
+V2__indexes.sql
+V3__portfolio_snapshots.sql
+V4__player_settings.sql
+
+V5__asset_trade_counts.sql
