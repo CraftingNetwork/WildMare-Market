@@ -7,7 +7,7 @@ import com.wildmare.market.service.PlayerSettingsService;
 import com.wildmare.market.model.MarketQuote;
 import com.wildmare.market.util.TextUtil;
 import com.wildmare.market.webhook.DiscordWebhookService;
-import net.kyori.adventure.text.title.Title;
+import net.kyori.adventure.title.Title;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
