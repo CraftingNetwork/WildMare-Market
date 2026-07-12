@@ -23,7 +23,7 @@ main:
     etfs: {slot: 21, material: PAPER, name: "<light_purple><bold>ᴇᴛғs</bold></light_purple>", lore: ["<gray>Browse exchange-traded funds.</gray>"]}
     indexes: {slot: 22, material: COMPASS, name: "<light_purple><bold>ɪɴᴅᴇxᴇs</bold></light_purple>", lore: ["<gray>Browse market indexes.</gray>"]}
     crypto: {slot: 23, material: AMETHYST_SHARD, name: "<light_purple><bold>ᴄʀʏᴘᴛᴏᴄᴜʀʀᴇɴᴄʏ</bold></light_purple>", lore: ["<gray>Browse virtual cryptocurrency assets.</gray>"]}
-    search: {slot: 24, material: SPYGLASS, name: "<light_purple><bold>sᴇᴀʀᴄʜ ᴀssᴇᴛ</bold></light_purple>", lore: ["<gray>Use:</gray> <white>/market search &lt;symbol&gt;</white>"]}
+    search: {slot: 24, material: SPYGLASS, name: "<light_purple><bold>sᴇᴀʀᴄʜ ᴀssᴇᴛ</bold></light_purple>", lore: ["<gray>Use:</gray> <white>/market search \\<symbol></white>"]}
     trending: {slot: 10, material: FIREWORK_STAR, name: "<light_purple><bold>ᴛʀᴇɴᴅɪɴɢ ᴀssᴇᴛs</bold></light_purple>", lore: ["<gray>View assets with notable movement.</gray>"]}
     recent: {slot: 16, material: CLOCK, name: "<light_purple><bold>ʀᴇᴄᴇɴᴛʟʏ ᴛʀᴀᴅᴇᴅ</bold></light_purple>", lore: ["<gray>View the latest globally traded assets.</gray>"]}
     gainers: {slot: 12, material: LIME_DYE, name: "<green><bold>ᴛᴏᴘ ɢᴀɪɴᴇʀs</bold></green>", lore: ["<gray>View the strongest positive changes.</gray>"]}
@@ -98,7 +98,7 @@ quantity:
     slot: 25
     material: NAME_TAG
     name: "<white><bold>ᴄᴜsᴛᴏᴍ ᴀᴍᴏᴜɴᴛ</bold></white>"
-    lore: ["<gray>Use the command:</gray>", "<white>/market {side} {symbol} &lt;amount&gt;</white>"]
+    lore: ["<gray>Use the command:</gray>", "<white>/market {side} {symbol} \\<amount></white>"]
   back-slot: 31
 
 confirmation:

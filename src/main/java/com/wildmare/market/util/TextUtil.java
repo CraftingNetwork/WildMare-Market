@@ -33,11 +33,21 @@ public final class TextUtil {
     }
 
     public static Component component(String miniMessage, Map<String, ?> placeholders) {
-        return MINI_MESSAGE.deserialize(replace(miniMessage, placeholders));
+        return MINI_MESSAGE.deserialize(normalizeMiniMessage(replace(miniMessage, placeholders)));
     }
 
     public static Component component(String miniMessage) {
-        return MINI_MESSAGE.deserialize(miniMessage == null ? "" : miniMessage);
+        return MINI_MESSAGE.deserialize(normalizeMiniMessage(miniMessage));
+    }
+
+    /**
+     * Converts legacy HTML-style angle entities used by older configuration files into
+     * MiniMessage-safe literal angle brackets. MiniMessage escapes a literal opening
+     * angle bracket with a backslash, for example {@code \<symbol>}.
+     */
+    static String normalizeMiniMessage(String input) {
+        if (input == null || input.isEmpty()) return "";
+        return input.replace("&lt;", "\\<").replace("&gt;", ">");
     }
 
     public static List<Component> components(List<String> lines, Map<String, ?> placeholders) {

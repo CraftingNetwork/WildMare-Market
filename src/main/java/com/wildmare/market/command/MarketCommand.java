@@ -116,7 +116,7 @@ public final class MarketCommand implements CommandExecutor, TabCompleter {
             return;
         }
         if (args.length < 3) {
-            usage(player, "/market watchlist &lt;add|remove&gt; &lt;symbol&gt;");
+            usage(player, "/market watchlist \\<add|remove> \\<symbol>");
             return;
         }
         String symbol = args[2].toUpperCase(Locale.ROOT);
@@ -126,7 +126,7 @@ public final class MarketCommand implements CommandExecutor, TabCompleter {
             default -> null;
         };
         if (future == null) {
-            usage(player, "/market watchlist &lt;add|remove&gt; &lt;symbol&gt;");
+            usage(player, "/market watchlist \\<add|remove> \\<symbol>");
             return;
         }
         future.whenComplete((result, throwable) -> sync(() -> {
@@ -156,8 +156,8 @@ public final class MarketCommand implements CommandExecutor, TabCompleter {
         String action = args[1].toLowerCase(Locale.ROOT);
         if (action.equals("add")) {
             if (args.length < 5) {
-                usage(player, "/market alerts add &lt;symbol&gt; "
-                        + "&lt;above|below|percent_up|percent_down|daily_gain|daily_loss&gt; &lt;target&gt;");
+                usage(player, "/market alerts add \\<symbol> "
+                        + "\\<above|below|percent_up|percent_down|daily_gain|daily_loss> \\<target>");
                 return;
             }
             try {
@@ -186,7 +186,7 @@ public final class MarketCommand implements CommandExecutor, TabCompleter {
             return;
         }
         if (args.length < 3) {
-            usage(player, "/market alerts &lt;delete|pause|resume|edit&gt; &lt;alert-id&gt; [target]");
+            usage(player, "/market alerts \\<delete|pause|resume|edit> \\<alert-id> [target]");
             return;
         }
         UUID alertId;
@@ -234,7 +234,7 @@ public final class MarketCommand implements CommandExecutor, TabCompleter {
 
     private void handleSearch(Player player, String[] args) {
         if (args.length < 2) {
-            usage(player, "/market search &lt;symbol or company name&gt;");
+            usage(player, "/market search \\<symbol or company name>");
             return;
         }
         String query = String.join(" ", Arrays.copyOfRange(args, 1, args.length));
@@ -249,7 +249,7 @@ public final class MarketCommand implements CommandExecutor, TabCompleter {
 
     private void handleQuote(Player player, String[] args) {
         if (args.length < 2) {
-            usage(player, "/market quote &lt;symbol&gt;");
+            usage(player, "/market quote \\<symbol>");
             return;
         }
         String symbol = args[1].toUpperCase(Locale.ROOT);
@@ -284,7 +284,7 @@ public final class MarketCommand implements CommandExecutor, TabCompleter {
         if (!allowed(player, "wildmaremarket.trade") || !allowed(player, permission)) return;
         if (args.length < 3) {
             usage(player, "/market " + side.name().toLowerCase(Locale.ROOT)
-                    + " &lt;symbol&gt; &lt;amount&gt;");
+                    + " \\<symbol> \\<amount>");
             return;
         }
         String symbol = args[1].toUpperCase(Locale.ROOT);
